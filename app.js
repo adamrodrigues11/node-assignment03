@@ -22,8 +22,8 @@ app.use(expressLayouts);
 app.set("layout", "./layouts/full-width");
 
 app.use(indexRouter);
-app.use("/profiles", profilesRouter);
-app.use("/api", apiRouter);
+// app.use("/profiles", profilesRouter);
+// app.use("/api", apiRouter);
 
 app.all("/*", (req, res) => {
     res.status(404).send("File Not Found");
