@@ -1,0 +1,31 @@
+{
+  "name": "nodeassignment2",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000o\u0000d\u0000e\u0000P\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000D\u0000a\u0000y\u00002\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAddison4/NodeProjectDay2.git"
+  },
+  "author": "Catherine Addison",
+  "contributors": [
+    {
+      "name": "Adam Rodrigues"
+    },
+    {
+      "name": "Mike Yamauchi"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CAddison4/NodeProjectDay2/issues"
+  },
+  "homepage": "https://github.com/CAddison4/NodeProjectDay2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
