@@ -22,9 +22,12 @@ profilesRouter.get("/", (req, res) => {
 });
 
 profilesRouter.get("/:id", (req, res) => {
+    const profile = profilesArr.find( p => p.id == req.params.id);
     const viewData = {
-        title: "Profile",
-        profile: profilesArr.find( p => p.id == req.params.id)
+        title: profile.name,
+        profile: profile,
+        profiles: profilesArr,
+        layout: "./layouts/side-bar"
     };
     res.render("profile", viewData)
 });
