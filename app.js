@@ -8,7 +8,7 @@ const app = express();
 const port = process.envPORT || 3000;
 
 // load Routers
-const indexRouter = require("./routers/indexRouter");
+const indexRouter = require("./routers/indexFilesRouter");
 const apiRouter = require("./routers/apiRouter");
 const profilesRouter = require("./routers/profilesRouter");
 
