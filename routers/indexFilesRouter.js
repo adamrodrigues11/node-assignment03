@@ -1,10 +1,16 @@
 const express = require("express");
 const indexRouter = express.Router();
 const path = require("path");
+// const viewData = {
+//     title: "Test"
+//     // aboutTitle: "About"
 
-indexRouter.get("/", (req, res) => res.send("/../views/index.ejs"))
-indexRouter.get("/about", (req, res) => res.send(__dirname, "/../views/about.ejs"))
-indexRouter.get("/contact", (req, res) => res.send(__dirname, "/../views/contact.ejs"))
+//   };
 
+const projectTitle = "Express Yourself"
+indexRouter.get("/", (req, res) => res.render("index",{title: `${projectTitle} - Home`}));  
+indexRouter.get("/about", (req, res) => res.render("about",{title: `${projectTitle} - About`}));
+indexRouter.get("/contact", (req, res) => res.render("contact",{title: `${projectTitle} - Contacts`}));
+indexRouter.post("/contact", (req, res) => res.send("Thanks for your submission"))
 
 module.exports = indexRouter;
