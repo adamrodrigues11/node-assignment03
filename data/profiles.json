@@ -2,7 +2,6 @@
     {
         "id": "cat",
         "name": "Cat Addison",
-        // "imagePath": "/images/ProfessorJS.png",
         "interests": [
             "Code",
             "Coffee",
@@ -12,7 +11,6 @@
     {
         "id": "mike",
         "name": "Mike Yamauchi",
-        // "imagePath": "/images/ProfessorJS.png",
         "interests": [
             "Parkour",
             "Toys",
@@ -22,7 +20,6 @@
     {
         "id": "adam",
         "name": "Adam Rodrigues",
-        // "imagePath": "/images/JoshuaGiraffe.jpg",
         "interests": [
             "Coffee",
             "Coffee",
