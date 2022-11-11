@@ -1,6 +1,6 @@
 <h2>Profiles</h2>
 <ul>
     <% for (let i = 0; i < profiles.length; i++) { %>
-    <li><a href="profile.ejs"><% profiles[i].name %></a></li>
+    <li><a href="/profiles/<%= profiles[i].id %>"><%= profiles[i].name %></a></li>
     <% } %>
 </ul>
