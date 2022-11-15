@@ -12,7 +12,7 @@
     {
         "id": "mike",
         "name": "Mike Yamauchi",
-        "imgPath": "/images/trash.jpg",
+        "imgPath": "https://catscancode.ca/catroverted-images/animals.png",
         "interests": [
             "Parkour",
             "Toys",
