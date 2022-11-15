@@ -24,7 +24,7 @@ indexRouter.post("/contact", (req, res) => {
     res.render("contact", {
         title: `${projectTitle} - Contacts`,
         status: "received",
-        formData: req.body,
+        formData: req.body
     });
 });
 

@@ -2,11 +2,12 @@
     {
         "id": "cat",
         "name": "Cat Addison",
-        "imgPath": "/images/trash.jpg",
+        "imgPath": "/images/cat.jpg",
         "interests": [
-            "Code",
-            "Coffee",
-            "Teaching"
+            "Skiing",
+            "Running",
+            "Climbing",
+            "Cute Coffee Shoppes"
         ]
     },
     {
@@ -22,13 +23,12 @@
     {
         "id": "adam",
         "name": "Adam Rodrigues",
-        "imgPath": "/images/trash.jpg",
+        "imgPath": "/images/adam.jpg",
         "interests": [
-            "Coffee",
-            "Coffee",
-            "Calculus",
-            "Coffee",
-            "Magic"
+            "Runnning",
+            "Skiing",
+            "Music",
+            "Math"
         ]
     }
 ]
