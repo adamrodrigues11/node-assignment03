@@ -1,4 +1,13 @@
 "use strict";
+
+//MongoDB connection
+const { mongoose } = require("mongoose");
+const uri =
+    "mongodb+srv://user-02:qCRv7kEhqCbbaOxp@ssd.bfarfsk.mongodb.net/NodeAssignment03"
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
+
 //Requirements
 const express = require("express");
 const path = require("path");
