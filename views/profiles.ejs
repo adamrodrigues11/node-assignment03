@@ -2,6 +2,11 @@
 <a href="/profiles/profile-form"><button>Create New Profile</button></a>
 <ul>
     <% for (let i = 0; i < profiles.length; i++) { %>
-    <li><a href="/profiles/<%= profiles[i].id %>"><%= profiles[i].name %></a></li>
+    <li>
+        <a href="/profiles/<%= profiles[i].id %>"><%= profiles[i].name %></a> | 
+        <a href="/profiles/<%= profiles[i].id %>/delete"><button>Delete</button></a>
+    </li>
     <% } %>
 </ul>
+
+<%= errorMsg %>
