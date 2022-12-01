@@ -6,4 +6,6 @@
     <input id="name" name="name" type="text" value="<%= profile?.name ?? ""%>">
     <button type="submit" value="submit">Submit</button> 
 </form>
-<%= errorMsg %>
+<div class="message">
+    <p><%= errorMsg %></p>
+</div>

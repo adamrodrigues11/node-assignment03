@@ -28,15 +28,22 @@ const indexRouter = require("./routers/indexRouter");
 const apiRouter = require("./routers/apiRouter");
 const profilesRouter = require("./routers/profilesRouter");
 
-//Allow Access to Views
+//Allow Access to Views and public folder
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-//Use Logger, Layouts, & Body Parser
+//Use Logger
 app.use(logger("dev"));
-app.use(express.static("public"));
+
+// Layouts
 app.use(expressLayouts);
 app.set("layout", "./layouts/full-width");
+
+// Public static assets
+app.use("/public", express.static("public"));
+app.set("public", path.join(__dirname, "public"));
+
+// Body parser
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 

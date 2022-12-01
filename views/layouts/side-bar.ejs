@@ -5,35 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
-    <style>
-      main {
-        display: flex;
-        justify-content: space-between;
-      }
-      .body {
-        flex: 1;
-      }
-      .sidebar {
-        flex: 1;
-      }
-    </style>
+    <link href="/public/styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <%- include('../partials/header.ejs') %>
-    <main>
-      <div class="body">
-        <%- body %>
-      </div>
-      <div class="sidebar">
-          <h2>Other Profiles</h2>
-          <ul>
-              <% for (let i = 0; i < otherProfiles.length; i++) { %>
-                  <li><a href="/profiles/<%= otherProfiles[i].id %>"><%= otherProfiles[i].name%></a></li>
-              <% } %>
-          </ul>
-      </div>
-    </main>
-    <%- include('../partials/footer.ejs') %>
-    
+    <div class="page-wrapper">
+      <%- include('../partials/header.ejs') %>
+      <main>
+        <div class="sidebar-layout">
+          <div class="body">
+            <%- body %>
+          </div>
+          <div class="sidebar">
+              <h2>Other Profiles</h2>
+              <ul class="profiles-list">
+                  <% for (let i = 0; i < otherProfiles.length; i++) { %>
+                      <li><a href="/profiles/<%= otherProfiles[i].id %>"><%= otherProfiles[i].name%></a></li>
+                  <% } %>
+              </ul>
+          </div>
+        </div>
+      </main>
+      <%- include('../partials/footer.ejs') %>
+    </div>
   </body>
 </html>
